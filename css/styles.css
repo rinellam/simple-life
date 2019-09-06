@@ -273,6 +273,10 @@ nav a:focus {
     margin: 0;
 }
 
+.widget-body {
+    color: #000000;
+}
+
 /* order in sidebar */
 .widget-image {
     order: -1;
