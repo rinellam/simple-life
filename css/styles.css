@@ -66,10 +66,6 @@ a:focus {
     font-size: 0.875rem;
 }
 
-.article-body {
-    line-height: 1.5rem;
-}
-
 .article-read-more {
     color: #1792d2;
     text-decoration: none; 
@@ -231,11 +227,14 @@ nav a:focus {
         object-fit: cover;r
         object-position: center;
     }
+}
 
+@media (min-width: 300px) {
     .article-featured {
         display: flex;
         flex-direction: column;
     }
+    
     .article-image {
         order: -2;
     }
@@ -243,7 +242,6 @@ nav a:focus {
         order: -1;
     }
 }
-
 /* widgets */
 
 .widget-title {
