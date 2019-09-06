@@ -110,6 +110,7 @@ header {
 }
 
 footer {
+    font-family: 'Lora', serif;
     background: #143774;
     color: #FFFFFF;
     text-align: center;
@@ -281,6 +282,27 @@ nav a:focus {
 .widget-image {
     order: -1;
 }
+
+/* about me */
+
+.about-me-img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+        margin-bottom: 2rem;
+}
+
+.article-featured:last-child {
+    border: 0;
+
+}
+
+.article-title-about-me {
+    font-size: 1.25rem;
+    margin-top: 1em;
+    color: #1792D2;
+}
+
 
 
 
