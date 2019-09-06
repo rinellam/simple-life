@@ -86,6 +86,7 @@ a:focus {
     text-decoration: underline; 
 }
 
+
 /* =================
 Layout
 ================= */
@@ -117,6 +118,10 @@ footer {
     padding: 3em 0;
     font-size: 1rem;
     font-weight: 300;
+}
+
+.about-me-widget {
+    margin-bottom: 3rem;
 }
 
 
@@ -160,12 +165,12 @@ nav a {
 nav a:hover,
 nav a:focus {
     color: #1792d2;
-    border-bottom: 4px solid #1792d2;
+    border-bottom: 2px solid #1792d2;
     transition-delay: 50ms;
 }
 
 .current-page {
-    border-bottom: 1px solid #707070;
+    border-bottom: 2px solid #707070;
 }
 
 .current-page:hover {
@@ -285,23 +290,18 @@ nav a:focus {
 
 /* about me */
 
-.about-me-img {
+.image-full {
         width: 100%;
         height: 250px;
         object-fit: cover;
         margin-bottom: 2rem;
 }
 
-.article-featured:last-child {
-    border: 0;
-
+.about-me-title {
+    color: #1792d2;
 }
 
-.article-title-about-me {
-    font-size: 1.25rem;
-    margin-top: 1em;
-    color: #1792D2;
-}
+
 
 
 
