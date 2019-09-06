@@ -108,6 +108,15 @@ header {
     margin-bottom: 3em;
 }
 
+footer {
+    background: #143774;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 3em 0;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
 
 @media (min-width: 675px){
     .container-flex {
@@ -118,9 +127,11 @@ header {
     }
     aside {
         width: 25%;
+        min-width: 200px;
+        margin-left: .5em;
     }
-
 }
+
 /* navigation */
 
 nav ul {
@@ -132,20 +143,23 @@ nav ul {
 
 nav li {
     margin-left: 2em;
-    letter-spacing: .15rem;
     text-transform: uppercase;
 }
 
 nav a {
     text-decoration: none;
     color: #707070;
-    font-weight: 700;
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: .10rem;
     padding: .25em 0;
 }
 
 nav a:hover,
 nav a:focus {
     color: #1792d2;
+    border-bottom: 4px solid #1792d2;
+    transition-delay: 50ms;
 }
 
 .current-page {
@@ -223,36 +237,45 @@ nav a:focus {
     }
 }
 
-
 /* widgets */
 
+.widget-title {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    letter-spacing: .15rem;
+}
+
+.widget-title,
+.widget-recent-post-title {
+    font-size: 1rem;
+}
+
+.widget-recent-post-title {
+    padding-top: 0.75em;
+}
+
 .sidebar-widget {
-    display: flex;
-    flex-direction: column;
-    border: 12px solid #CCCCCC;
+    border: 12px solid #efefef;
     padding: 1em;
     margin-bottom: 2em;
 }
 
-.widget-title {
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 1.25rem;
-    font-weight: 700;
-    color: #143774;
-    letter-spacing: .15rem;
-}
-
-.widget-recent-post-title {
-    font-family: 'Lora', sans-serif;
-    font-size: 1.125rem;
-    font-weight: 400;
-    color: #143774;
-}
-
 .widget-recent-post {
-        border-bottom: #707070 1px solid;
-        padding-bottom: 2em;
-        margin-bottom: 2em;
+    display: flex;
+    flex-direction: column;
+    border-bottom: #707070 1px solid;
+    margin-bottom: 1em;
 }
+
+.widget-recent-post:last-child {
+    border: 0;
+    margin: 0;
+}
+
+/* order in sidebar */
+.widget-image {
+    order: -1;
+}
+
 
 
