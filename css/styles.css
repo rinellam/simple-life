@@ -63,6 +63,7 @@ a:focus {
 
 .article-title {
     font-size: 1.5rem; /* 24 px */
+    margin: 0;
 }
 
 .article-body {
