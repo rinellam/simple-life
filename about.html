@@ -7,6 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://fonts.googleapis.com/css?family=Lora|Ubuntu:300,400,700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/styles.css">
+        <script src="http://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
         <title>About Me</title>
     </head>
     <body> 
@@ -70,19 +71,35 @@
             <div class="hidden">
                 <script type="text/javascript">
             
-                        if (document.images) {
-                            img1 = new Image();
-                            img2 = new Image();
-                            img3 = new Image();
-                            img4 = new Image();
-                            img5 = new Image();
+            function preloader() {
+                if (document.images) {
+                    img1 = new Image();
+                    img2 = new Image();
+                    img3 = new Image();
+                    img4 = new Image();
+                    img5 = new Image();
             
-                            img1.src = "http://michaelrinella.com/simple-life/img/tim-foster-ck1yw9O3stI-unsplash-min.jpg";
-                            img2.src = "http://michaelrinella.com/simple-life/img/cooking-min.jpg";
-                            img3.src = "http://michaelrinella.com/simple-life/img/workspace-min.jpg";
-                            img4.src = "http://michaelrinella.com/simple-life/img/decorations4-min.jpg";
-                            img5.src = "http://michaelrinella.com/simple-life/img/about.jpg";
+                    img1.src = "http://michaelrinella.com/simple-life/img/tim-foster-ck1yw9O3stI-unsplash-min.jpg";
+                    img2.src = "http://michaelrinella.com/simple-life/img/cooking-min.jpg";
+                    img3.src = "http://michaelrinella.com/simple-life/img/workspace-min.jpg";
+                    img4.src = "http://michaelrinella.com/simple-life/img/decorations4-min.jpg";
+                    img5.src = "http://michaelrinella.com/simple-life/img/about.jpg";
+                }
+            }
+            function addLoadEvent(func) {
+                var oldonload = window.onload;
+                if (typeof window.onload != 'function') {
+                    window.onload = func;
+                } else {
+                    window.onload = function() {
+                        if (oldonload) {
+                            oldonload();
                         }
+                        func();
+                    }
+                }
+            }
+            addLoadEvent(preloader);
             
                 </script>
             </div>
