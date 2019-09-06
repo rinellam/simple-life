@@ -37,10 +37,6 @@ h1 {
     margin: 0;
 }
 
-p {
-    line-height: 1.5rem;
-}
-
 strong { /* bold */
     font-weight: 700;
 }
@@ -67,6 +63,10 @@ a:focus {
 
 .article-title {
     font-size: 1.5rem; /* 24 px */
+}
+
+.article-body {
+    line-height: 1.5rem;
 }
 
 .article-read-more, .article-info {
@@ -168,7 +168,7 @@ nav li {
 nav a {
     text-decoration: none;
     color: #707070;
-    font-size: 1rem;
+    font-size: 0.85rem;
     font-weight: 400;
     letter-spacing: .10rem;
     padding: .25em 0;
