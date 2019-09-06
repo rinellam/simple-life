@@ -52,10 +52,13 @@ a:focus {
 
 /* logo subktitle */
 .subtitle {
-    font-weight: 700;
+    font-weight: 400;
     color: #1792d2;
     font-size: .85rem;
     margin: 0;
+    text-transform: uppercase;
+    margin-top: .25em;
+    letter-spacing: .075rem;
 }
 
 .article-title {
@@ -119,6 +122,10 @@ footer {
 .footer-terms-text {
     font-family: 'Ubuntu', sans-serif;
     font-size: 0.875rem;
+}
+
+.footer-terms-text a:hover {
+    color: #FFFFFF;
 }
 
 .about-me-widget {
